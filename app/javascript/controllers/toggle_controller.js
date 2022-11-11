@@ -1,4 +1,4 @@
-import ApplicationController from "./application_controller";
+import { Controller } from "@hotwired/stimulus";
 import { useClickOutside } from "stimulus-use";
 
 /*
@@ -14,7 +14,7 @@ import { useClickOutside } from "stimulus-use";
  * data-toggle-target="toggleable" data-css-class="class-to-toggle"
  *
  */
-export default class extends ApplicationController {
+export default class extends Controller {
   static targets = ["toggleable"];
 
   connect() {
